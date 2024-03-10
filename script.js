@@ -1,15 +1,20 @@
 $("#home").click(function() {
-	$(".aboutme").show();
+	$(".section1").show();
+    $(".aboutme").show();
+    $(".section2").hide();
+    $(".section3").hide();
 });
 
 $("#projects").click(function() {
+    $(".section2").show();
     $(".projects").show();
-    $(".aboutme").hide();
-    $(".labs").hide();
+    $(".section1").hide();
+    $(".section3").hide();
 });
 
 $("#labs").click(function() {
+    $(".section3").show();
     $(".labs").show();
-    $(".aboutme").hide();
-    $(".projects").hide();
+    $(".section1").hide();
+    $(".section2").hide();
 });
