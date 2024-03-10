@@ -27,7 +27,7 @@ hr {
     border: 1px solid darkviolet;
 }
 
-.section {
+.section1, .section2, .section3 {
     width: 75%;
     padding: 20px;
     margin: auto;
@@ -37,21 +37,21 @@ hr {
     border-radius: 20px;
 }
 
+.aboutme {
+	margin: 20px;
+}
+
 a {
     font-size: 21px;
 }
-
-.float-child {
-    margin: auto;
-    width: 45%;
-    float: left;
-    padding: 20px;
-}  
-
 .projects {
 	display: none;
 }
 
 .labs {
+    display: none;
+}
+
+.section2, .section3 {
     display: none;
 }
