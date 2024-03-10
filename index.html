@@ -4074,7 +4074,7 @@ hr {
     border: 1px solid darkviolet;
 }
 
-.section {
+.section1, .section2, .section3 {
     width: 75%;
     padding: 20px;
     margin: auto;
@@ -4084,22 +4084,22 @@ hr {
     border-radius: 20px;
 }
 
+.aboutme {
+	margin: 20px;
+}
+
 a {
     font-size: 21px;
 }
-
-.float-child {
-    margin: auto;
-    width: 45%;
-    float: left;
-    padding: 20px;
-}  
-
 .projects {
 	display: none;
 }
 
 .labs {
+    display: none;
+}
+
+.section2, .section3 {
     display: none;
 }</style></head>
 
@@ -4121,7 +4121,7 @@ a {
     <hr>
     <br>
     
-    <div class="section">
+    <div class="section1">
     	<div class="aboutme">
             <h2>Hi, I'm Leah!</h2>
             <h5>You can call me LJ!</h5>
@@ -4129,7 +4129,7 @@ a {
         </div>
     </div>
     
-    <div class="section">
+    <div class="section2">
     	<div class="projects">
         
     	<h2>My Projects</h2>
@@ -4161,16 +4161,17 @@ a {
         </div>
     </div>
         
-        <div class="section">    
+        <div class="section3">    
         	<div class="labs">
                 
     			<h2>My Labs</h2>
                 
 				<a href="https://leah9915.github.io/Leah-Jarvis-Review-Lesson-Chat-Independent-Practice"> Chat Independent Practice </a>
+                <p>A chat simulator that tracks how many messages you receive.</p>
     			<br>
                 
     			<a href="https://popcode.org/?snapshot=404bf10a-0b9a-4448-b338-f7dc4695f6bc"> Lesson 3: input.val(); </a>
-                
+                <p>A page where you can vote for your favorite food and dessert.</p>
         	</div>
         </div>
    
@@ -4181,16 +4182,21 @@ a {
 <script>
 /*__POPCODESTART__*/
 $("#home").click(function () {
+  $(".section1").show();
   $(".aboutme").show();
+  $(".section2").hide();
+  $(".section3").hide();
 });
 $("#projects").click(function () {
+  $(".section2").show();
   $(".projects").show();
-  $(".aboutme").hide();
-  $(".labs").hide();
+  $(".section1").hide();
+  $(".section3").hide();
 });
 $("#labs").click(function () {
+  $(".section3").show();
   $(".labs").show();
-  $(".aboutme").hide();
-  $(".projects").hide();
+  $(".section1").hide();
+  $(".section2").hide();
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsInNob3ciLCJoaWRlIl0sIm1hcHBpbmdzIjoiQUFBQUEsQ0FBQyxDQUFDLE9BQUQsQ0FBRCxDQUFXQyxLQUFYLENBQWlCLFlBQVc7QUFDM0JELEVBQUFBLENBQUMsQ0FBQyxVQUFELENBQUQsQ0FBY0UsSUFBZDtBQUNBLENBRkQ7QUFJQUYsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlQyxLQUFmLENBQXFCLFlBQVc7QUFDNUJELEVBQUFBLENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUUsSUFBZjtBQUNBRixFQUFBQSxDQUFDLENBQUMsVUFBRCxDQUFELENBQWNHLElBQWQ7QUFDQUgsRUFBQUEsQ0FBQyxDQUFDLE9BQUQsQ0FBRCxDQUFXRyxJQUFYO0FBQ0gsQ0FKRDtBQU1BSCxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdDLEtBQVgsQ0FBaUIsWUFBVztBQUN4QkQsRUFBQUEsQ0FBQyxDQUFDLE9BQUQsQ0FBRCxDQUFXRSxJQUFYO0FBQ0FGLEVBQUFBLENBQUMsQ0FBQyxVQUFELENBQUQsQ0FBY0csSUFBZDtBQUNBSCxFQUFBQSxDQUFDLENBQUMsV0FBRCxDQUFELENBQWVHLElBQWY7QUFDSCxDQUpEIiwic291cmNlc0NvbnRlbnQiOlsiJChcIiNob21lXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuXHQkKFwiLmFib3V0bWVcIikuc2hvdygpO1xufSk7XG5cbiQoXCIjcHJvamVjdHNcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5wcm9qZWN0c1wiKS5zaG93KCk7XG4gICAgJChcIi5hYm91dG1lXCIpLmhpZGUoKTtcbiAgICAkKFwiLmxhYnNcIikuaGlkZSgpO1xufSk7XG5cbiQoXCIjbGFic1wiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmxhYnNcIikuc2hvdygpO1xuICAgICQoXCIuYWJvdXRtZVwiKS5oaWRlKCk7XG4gICAgJChcIi5wcm9qZWN0c1wiKS5oaWRlKCk7XG59KTsiXX0=</script></body></html>
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsInNob3ciLCJoaWRlIl0sIm1hcHBpbmdzIjoiQUFBQUEsQ0FBQyxDQUFDLE9BQUQsQ0FBRCxDQUFXQyxLQUFYLENBQWlCLFlBQVc7QUFDM0JELEVBQUFBLENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUUsSUFBZjtBQUNHRixFQUFBQSxDQUFDLENBQUMsVUFBRCxDQUFELENBQWNFLElBQWQ7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlRyxJQUFmO0FBQ0FILEVBQUFBLENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUcsSUFBZjtBQUNILENBTEQ7QUFPQUgsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlQyxLQUFmLENBQXFCLFlBQVc7QUFDNUJELEVBQUFBLENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUUsSUFBZjtBQUNBRixFQUFBQSxDQUFDLENBQUMsV0FBRCxDQUFELENBQWVFLElBQWY7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlRyxJQUFmO0FBQ0FILEVBQUFBLENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUcsSUFBZjtBQUNILENBTEQ7QUFPQUgsQ0FBQyxDQUFDLE9BQUQsQ0FBRCxDQUFXQyxLQUFYLENBQWlCLFlBQVc7QUFDeEJELEVBQUFBLENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUUsSUFBZjtBQUNBRixFQUFBQSxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdFLElBQVg7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlRyxJQUFmO0FBQ0FILEVBQUFBLENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUcsSUFBZjtBQUNILENBTEQiLCJzb3VyY2VzQ29udGVudCI6WyIkKFwiI2hvbWVcIikuY2xpY2soZnVuY3Rpb24oKSB7XG5cdCQoXCIuc2VjdGlvbjFcIikuc2hvdygpO1xuICAgICQoXCIuYWJvdXRtZVwiKS5zaG93KCk7XG4gICAgJChcIi5zZWN0aW9uMlwiKS5oaWRlKCk7XG4gICAgJChcIi5zZWN0aW9uM1wiKS5oaWRlKCk7XG59KTtcblxuJChcIiNwcm9qZWN0c1wiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLnNlY3Rpb24yXCIpLnNob3coKTtcbiAgICAkKFwiLnByb2plY3RzXCIpLnNob3coKTtcbiAgICAkKFwiLnNlY3Rpb24xXCIpLmhpZGUoKTtcbiAgICAkKFwiLnNlY3Rpb24zXCIpLmhpZGUoKTtcbn0pO1xuXG4kKFwiI2xhYnNcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5zZWN0aW9uM1wiKS5zaG93KCk7XG4gICAgJChcIi5sYWJzXCIpLnNob3coKTtcbiAgICAkKFwiLnNlY3Rpb24xXCIpLmhpZGUoKTtcbiAgICAkKFwiLnNlY3Rpb24yXCIpLmhpZGUoKTtcbn0pOyJdfQ==</script></body></html>
