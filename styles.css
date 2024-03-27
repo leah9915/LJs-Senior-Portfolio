@@ -39,11 +39,13 @@ hr {
 
 .aboutme {
 	margin: 20px;
+	font-size: 24px;
 }
 
 a {
     font-size: 21px;
 }
+
 .projects {
 	display: none;
 }
