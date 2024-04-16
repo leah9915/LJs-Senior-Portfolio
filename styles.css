@@ -42,7 +42,7 @@ hr {
 	font-size: 24px;
 }
 
-a {
+a, #home, #projects, #labs, #gmetrix {
     font-size: 21px;
 	color: white;
 }
